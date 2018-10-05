@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            padding: 6px;
+            text-align: left;
+            white-space: nowrap;
+        }
+        th, td {
+            font-family: sans;
+            font-size: 0.85em;
+        }
+        h2 {
+            font-family: Arial;
+            font-size: 1.25em;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        .number {text-align:center}
+
+    </style>
+</head>
+
+<body>
+<h2> Tags </h2>
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+<input type="submit" value="Reinforcement Learning">
+
+<h2> Paper Browser </h2>
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>File Name</th>
+        <th>Size</th>
+        <th>Functions</th>
+    </tr>
+
+    {% for file in files %}
+    <tr>
+        <td class="number">{{ loop.index }}</td>
+        <td>{{ file }}</td>
+        <td>1 kb</td>
+        <td>
+            <a href="{{ file }}">
+                <input type="submit" value="Open">
+            </a>
+
+            <a href="/tag/{{ file }}">
+                <input type="submit" value="Tag">
+            </a>
+
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
